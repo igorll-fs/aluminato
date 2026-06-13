@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1a2332;
+    background-color: #ffffff;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  ::selection {
+    background-color: #d4af37;
+    color: #1a2332;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-20 md:py-24 lg:py-28;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .section-content {
+    @apply max-w-7xl mx-auto px-5 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-dourado text-azul-escuro font-heading font-semibold
+           px-8 py-4 rounded-xl
+           transition-all duration-300 ease-out
+           hover:bg-dourado-light hover:shadow-button-hover
+           hover:-translate-y-0.5
+           active:translate-y-0 active:shadow-button
+           focus:outline-none focus:ring-2 focus:ring-dourado focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2
+           border-2 border-white text-white font-heading font-semibold
+           px-8 py-4 rounded-xl
+           transition-all duration-300 ease-out
+           hover:bg-white hover:text-azul-escuro
+           hover:shadow-button-hover hover:-translate-y-0.5
+           active:translate-y-0
+           focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2
+           border-2 border-dourado text-dourado font-heading font-semibold
+           px-8 py-4 rounded-xl
+           transition-all duration-300 ease-out
+           hover:bg-dourado hover:text-azul-escuro
+           hover:shadow-button-hover hover:-translate-y-0.5
+           active:translate-y-0
+           focus:outline-none focus:ring-2 focus:ring-dourado focus:ring-offset-2;
+  }
+
+  .btn-azul {
+    @apply inline-flex items-center justify-center gap-2
+           bg-azul-claro text-white font-heading font-semibold
+           px-8 py-4 rounded-xl
+           transition-all duration-300 ease-out
+           hover:bg-azul-light hover:shadow-lg
+           hover:-translate-y-0.5
+           active:translate-y-0
+           focus:outline-none focus:ring-2 focus:ring-azul-claro focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl p-8
+           shadow-card
+           transition-all duration-300 ease-out
+           hover:shadow-card-hover hover:-translate-y-1;
+  }
+
+  .card-dark {
+    @apply bg-azul-escuro rounded-2xl p-8
+           shadow-card
+           transition-all duration-300 ease-out
+           hover:shadow-card-hover hover:-translate-y-1;
+  }
+
+  .section-title {
+    @apply font-heading font-bold text-azul-escuro
+           text-3xl md:text-4xl lg:text-5xl
+           mb-4 leading-tight;
+  }
+
+  .section-subtitle {
+    @apply font-body text-cinza-escuro
+           text-lg md:text-xl
+           max-w-3xl mx-auto leading-relaxed;
+  }
+
+  .gold-divider {
+    @apply w-16 h-1 bg-dourado rounded-full mx-auto mb-6;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-dourado-dark via-dourado to-dourado-light
+           bg-clip-text text-transparent bg-300% animate-gradient;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
