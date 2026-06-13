@@ -1,6 +1,7 @@
 const BASE = import.meta.env.BASE_URL || '/'
 
 export const portfolioItems = [
+  // === VÍDEOS PRIMEIRO ===
   {
     id: 1,
     name: 'Hard Rock Cafe Itapema',
@@ -10,82 +11,83 @@ export const portfolioItems = [
   },
   {
     id: 2,
-    name: 'Singapore',
-    photo: `${BASE}portfolio/photos/singapore-concept.jpg`,
-    video: null,
-    gallery: [`${BASE}portfolio/photos/singapore-concept.jpg`, `${BASE}portfolio/photos/singapore-2.jpg`],
-  },
-  {
-    id: 3,
-    name: 'Paradiso',
-    photo: `${BASE}portfolio/photos/paradiso.jpg`,
-    video: null,
-  },
-  {
-    id: 4,
-    name: 'Mont Blanc',
-    photo: `${BASE}portfolio/photos/mont-blanc.jpg`,
-    video: null,
-    gallery: [`${BASE}portfolio/photos/mont-blanc.jpg`, `${BASE}portfolio/photos/mont-blanc-2.jpg`],
-  },
-  {
-    id: 5,
-    name: 'Noah',
-    photo: `${BASE}portfolio/photos/noah.jpg`,
-    video: `${BASE}portfolio/videos/noah.mp4`,
-  },
-  {
-    id: 6,
-    name: 'Alameda',
-    photo: `${BASE}portfolio/photos/alameda.jpg`,
-    video: null,
-  },
-  {
-    id: 7,
-    name: 'Beach Tower',
-    photo: `${BASE}portfolio/photos/beach-tower.jpg`,
-    video: null,
-  },
-  {
-    id: 8,
     name: 'Horizon',
     photo: null,
     video: `${BASE}portfolio/videos/horizon.mp4`,
     videoOnly: true,
   },
   {
-    id: 9,
+    id: 3,
     name: 'Grand Hill',
     photo: null,
     video: `${BASE}portfolio/videos/grand-hill.mp4`,
     videoOnly: true,
   },
   {
-    id: 10,
+    id: 4,
     name: 'Scopel Center',
     photo: null,
     video: `${BASE}portfolio/videos/scopel-center.mp4`,
     videoOnly: true,
   },
   {
-    id: 11,
+    id: 5,
     name: 'Port Beach Residence',
     photo: null,
     video: `${BASE}portfolio/videos/port-beach-residence.mp4`,
     videoOnly: true,
   },
   {
-    id: 12,
+    id: 6,
     name: 'Port Everglades',
     photo: null,
     video: `${BASE}portfolio/videos/port-everglades.mp4`,
     videoOnly: true,
   },
   {
-    id: 13,
+    id: 7,
     name: 'Long Beach',
     photo: null,
     video: `${BASE}portfolio/videos/long-beach.mp4`,
     videoOnly: true,
+  },
+  {
+    id: 8,
+    name: 'Noah',
+    photo: `${BASE}portfolio/photos/noah.jpg`,
+    video: `${BASE}portfolio/videos/noah.mp4`,
+  },
+  // === FOTOS DEPOIS ===
+  {
+    id: 9,
+    name: 'Singapore',
+    photo: `${BASE}portfolio/photos/singapore-concept.jpg`,
+    video: null,
+    gallery: [`${BASE}portfolio/photos/singapore-concept.jpg`, `${BASE}portfolio/photos/singapore-2.jpg`],
+  },
+  {
+    id: 10,
+    name: 'Paradiso',
+    photo: `${BASE}portfolio/photos/paradiso.jpg`,
+    video: null,
+  },
+  {
+    id: 11,
+    name: 'Mont Blanc',
+    photo: `${BASE}portfolio/photos/mont-blanc.jpg`,
+    video: null,
+    gallery: [`${BASE}portfolio/photos/mont-blanc.jpg`, `${BASE}portfolio/photos/mont-blanc-2.jpg`],
+  },
+  {
+    id: 12,
+    name: 'Alameda',
+    photo: `${BASE}portfolio/photos/alameda.jpg`,
+    video: null,
+  },
+  {
+    id: 13,
+    name: 'Beach Tower',
+    photo: `${BASE}portfolio/photos/beach-tower.jpg`,
+    video: null,
   },
 ]

@@ -13,7 +13,7 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(10, 15, 24, 0.75), rgba(10, 15, 24, 0.85)), url('/aluminato/frente-aluminato.jpg')`,
+        backgroundImage: `linear-gradient(rgba(10, 15, 24, 0.55), rgba(10, 15, 24, 0.70)), url('/frente-aluminato.jpg')`,
       }}
     >
       <div className="section-content text-center relative z-10 pt-20">
